@@ -67,7 +67,7 @@ Please file issues as follows:
 
 ## Home Assistant Add-on
 
-This repository now includes a Home Assistant add-on in `addons/pihole-unbound`.
+This repository now includes a Home Assistant add-on in `pihole-unbound`.
 
 ### Install from a fork
 
