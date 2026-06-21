@@ -5,12 +5,12 @@ set -eu
 OPTIONS_FILE="/data/options.json"
 
 TZ_VALUE="UTC"
-WEB_PORT="8080"
+WEB_PORT="80"
 WEB_PASSWORD=""
 
 if [ -f "$OPTIONS_FILE" ]; then
   TZ_VALUE="$(jq -r '.timezone // "UTC"' "$OPTIONS_FILE")"
-  WEB_PORT="$(jq -r '.web_port // 8080' "$OPTIONS_FILE")"
+  WEB_PORT="$(jq -r '.web_port // 80' "$OPTIONS_FILE")"
   WEB_PASSWORD="$(jq -r '.web_password // empty' "$OPTIONS_FILE")"
 fi
 
