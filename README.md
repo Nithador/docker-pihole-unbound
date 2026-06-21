@@ -87,11 +87,3 @@ git fetch upstream
 git checkout main
 git push -u origin main
 ```
-
-After that, run:
-
-```bash
-./scripts/sync-upstream.sh
-```
-
-This rebases your local `main` on top of upstream `main`, so updates stay easy to pull while keeping your Home Assistant add-on changes as a thin layer.
