@@ -1,18 +1,12 @@
 name: "Pi-hole + Unbound"
 description: "Pi-hole DNS sinkhole with integrated Unbound resolver."
 version: "2026.06.0"
-slug: "pihole_unbound"
+slug: "pihole-unbound"
 url: "https://github.com/Nithador/docker-pihole-unbound"
-image: "ghcr.io/mpgirro/docker-pihole-unbound"
-legacy: true
 startup: services
 boot: auto
 init: false
 host_network: true
-environment:
-  FTLCONF_dns_upstreams: "127.0.0.1#5335"
-  FTLCONF_dns_dnssec: "true"
-  FTLCONF_dns_listeningMode: "all"
 privileged:
   - NET_ADMIN
 arch:
@@ -27,6 +21,8 @@ webui: "http://[HOST]:80/admin/"
 options:
   timezone: "UTC"
   web_password: ""
+  web_port: 80
 schema:
   timezone: str
   web_password: password?
+  web_port: port

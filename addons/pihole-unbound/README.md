@@ -21,3 +21,4 @@ Pi-hole DNS sinkhole with integrated Unbound recursive resolver.
 
 - `timezone`: Time zone for logs and Pi-hole internals.
 - `web_password`: Optional Pi-hole admin password.
+- `web_port`: Pi-hole web UI port (default: `80`).

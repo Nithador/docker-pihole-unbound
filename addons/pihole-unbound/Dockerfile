@@ -1,5 +1,9 @@
-ARG BUILD_FROM=ghcr.io/mpgirro/docker-pihole-unbound:latest
-FROM ${BUILD_FROM}
+FROM ghcr.io/mpgirro/docker-pihole-unbound:2026.06.0
+
+LABEL \
+	io.hass.version="2026.06.0" \
+	io.hass.type="addon" \
+	io.hass.arch="aarch64|amd64|armhf|armv7|i386"
 
 RUN apk add --no-cache jq
 

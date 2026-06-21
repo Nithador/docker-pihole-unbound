@@ -15,4 +15,4 @@ This add-on packages the existing Pi-hole + Unbound container for Home Assistant
 ## Notes
 
 - If another service on Home Assistant host already uses port `53`, this add-on cannot start.
-- If another service uses your configured web port, change `web_port` in add-on options.
+- If another service uses your configured web port, change `web_port` in add-on options. The default is `80`.
