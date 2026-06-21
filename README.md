@@ -64,3 +64,34 @@ Please file issues as follows:
 - Pi-hole: For issues related to Pi-hole itself, please report them directly in the [Pi-hole repository](https://github.com/pi-hole/pi-hole/issues).
 - Unbound: For issues related to the Unbound DNS resolver, please use the [Unbound repository](https://github.com/NLnetLabs/unbound/issues).
 - Image Publishing: For issues specifically related to the image publishing (e.g., missing tags, images not being updated or published correctly), report them here in this repository.
+
+## Home Assistant Add-on
+
+This repository now includes a Home Assistant add-on in `addons/pihole-unbound`.
+
+### Install from a fork
+
+1. Fork this repository on GitHub.
+2. In Home Assistant, go to **Settings -> Add-ons -> Add-on Store -> Repositories**.
+3. Add your fork URL (for example, `https://github.com/<your-user>/docker-pihole-unbound`).
+4. Install **Pi-hole + Unbound**.
+
+### Keep your fork synced with upstream
+
+Set remotes once:
+
+```bash
+git remote rename origin upstream
+git remote add origin https://github.com/<your-user>/docker-pihole-unbound.git
+git fetch upstream
+git checkout main
+git push -u origin main
+```
+
+After that, run:
+
+```bash
+./scripts/sync-upstream.sh
+```
+
+This rebases your local `main` on top of upstream `main`, so updates stay easy to pull while keeping your Home Assistant add-on changes as a thin layer.

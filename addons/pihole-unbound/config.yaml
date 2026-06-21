@@ -1,0 +1,28 @@
+name: "Pi-hole + Unbound"
+description: "Pi-hole DNS sinkhole with integrated Unbound resolver."
+version: "0.1.0"
+slug: "pihole_unbound"
+url: "https://github.com/Nithador/docker-pihole-unbound"
+startup: services
+boot: auto
+init: false
+host_network: true
+privileged:
+  - NET_ADMIN
+arch:
+  - amd64
+  - aarch64
+  - armhf
+  - armv7
+  - i386
+map:
+  - addon_config:rw
+webui: "http://[HOST]:8080/admin/"
+options:
+  timezone: "UTC"
+  web_password: ""
+  web_port: 8080
+schema:
+  timezone: str
+  web_password: password?
+  web_port: port
