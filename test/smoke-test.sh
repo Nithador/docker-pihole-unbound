@@ -9,7 +9,7 @@ IFS=$'\n\t'
 IMAGE="${1:?usage: $0 <image-ref>}"
 NAME="pihole-smoke-$$"
 DNS_PORT="${SMOKE_DNS_PORT:-15353}"
-WEB_PORT="${SMOKE_WEB_PORT:-180}"
+WEB_PORT="${SMOKE_WEB_PORT:-18080}"
 READY_TIMEOUT="${SMOKE_READY_TIMEOUT:-120}"
 
 pass=0
