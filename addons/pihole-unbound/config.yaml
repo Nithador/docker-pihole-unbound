@@ -9,6 +9,10 @@ startup: services
 boot: auto
 init: false
 host_network: true
+environment:
+  FTLCONF_dns_upstreams: "127.0.0.1#5335"
+  FTLCONF_dns_dnssec: "true"
+  FTLCONF_dns_listeningMode: "all"
 privileged:
   - NET_ADMIN
 arch:
