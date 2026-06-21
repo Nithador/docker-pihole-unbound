@@ -14,11 +14,10 @@ Pi-hole DNS sinkhole with integrated Unbound recursive resolver.
 
 ## First Run
 
-- Default admin URL: `http://<home-assistant-host>:8080/admin/`
+- Default admin URL: `http://<home-assistant-host>/admin/` (port 80)
 - DNS listens on host port `53` because this add-on uses host networking.
 
 ## Options
 
 - `timezone`: Time zone for logs and Pi-hole internals.
 - `web_password`: Optional Pi-hole admin password.
-- `web_port`: Pi-hole web UI port (default: `8080`).

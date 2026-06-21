@@ -5,7 +5,7 @@ This add-on packages the existing Pi-hole + Unbound container for Home Assistant
 ## Networking
 
 - Uses `host_network: true` so DNS can bind directly to host port `53`.
-- Web UI is available on `http://<home-assistant-host>:8080/admin/` by default.
+- Web UI is available on `http://<home-assistant-host>/admin/` (port `80`) by default.
 
 ## Persistence
 

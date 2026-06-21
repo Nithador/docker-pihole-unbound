@@ -19,12 +19,10 @@ arch:
   - i386
 map:
   - addon_config:rw
-webui: "http://[HOST]:[PORT:8080]/admin/"
+webui: "http://[HOST]:80/admin/"
 options:
   timezone: "UTC"
   web_password: ""
-  web_port: 8080
 schema:
   timezone: str
   web_password: password?
-  web_port: port
