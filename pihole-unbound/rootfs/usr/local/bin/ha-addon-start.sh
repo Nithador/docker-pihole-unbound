@@ -38,4 +38,5 @@ if [ -n "$WEB_PASSWORD" ]; then
   export FTLCONF_webserver_api_password="$WEB_PASSWORD"
 fi
 
-exec /custom-entrypoint.sh
+chmod +x /custom-entrypoint.sh 2>/dev/null || true
+exec /bin/sh /custom-entrypoint.sh
