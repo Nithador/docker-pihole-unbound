@@ -10,4 +10,4 @@ RUN apk add --no-cache jq
 COPY rootfs/ /
 RUN chmod +x /usr/local/bin/ha-addon-start.sh
 
-ENTRYPOINT ["/usr/local/bin/ha-addon-start.sh"]
+ENTRYPOINT ["/bin/sh", "/usr/local/bin/ha-addon-start.sh"]
