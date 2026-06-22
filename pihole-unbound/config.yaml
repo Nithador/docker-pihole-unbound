@@ -3,7 +3,7 @@ description: "Pi-hole DNS sinkhole with integrated Unbound resolver."
 version: "2026.06.0"
 slug: "pihole-unbound"
 url: "https://github.com/Nithador/docker-pihole-unbound"
-image: "ghcr.io/mpgirro/docker-pihole-unbound:2026.06.0"
+image: "ghcr.io/mpgirro/docker-pihole-unbound"
 startup: services
 boot: auto
 init: false
