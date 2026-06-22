@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.06.12
+
+- Add AppArmor execute permissions for shell interpreter binaries used by startup (`/bin/busybox` and `/bin/bash`).
+- Addresses persistent startup handoff denial where `/bin/sh` resolves through BusyBox.
+
 ## 2026.06.11
 
 - Add explicit AppArmor execute permission for `/bin/sh` in the add-on startup handoff.
