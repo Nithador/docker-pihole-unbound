@@ -8,6 +8,10 @@ profile pi-hole-unbound flags=(attach_disconnected,mediate_deleted) {
   capability sys_nice,
   capability net_bind_service,
 
+  # Add-on startup chain: /bin/sh -> /usr/local/bin/ha-addon-start.sh -> /custom-entrypoint.sh
+  /usr/local/bin/ha-addon-start.sh rix,
+  /custom-entrypoint.sh rix,
+
   /etc/pihole/** r,
   /etc/dnsmasq.d/** r,
   /etc/unbound/** r,
