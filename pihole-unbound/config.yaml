@@ -15,7 +15,7 @@ arch:
   - amd64
 map:
   - addon_config:rw
-webui: "http://[HOST]:80/admin/"
+webui: "http://[HOST]:[PORT:80]/admin/"
 options:
   timezone: "UTC"
   web_password: ""
