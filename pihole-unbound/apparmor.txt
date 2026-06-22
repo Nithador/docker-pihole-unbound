@@ -20,7 +20,11 @@ profile pi-hole-unbound flags=(attach_disconnected,mediate_deleted) {
   /bin/chmod rix,
   /bin/coreutils rix,
 
+  /etc/pihole/ r,
+  /etc/pihole/. r,
   /etc/pihole/** r,
+  /etc/dnsmasq.d/ r,
+  /etc/dnsmasq.d/. r,
   /etc/dnsmasq.d/** r,
   /etc/unbound/** r,
   /etc/lighttpd/** r,

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.06.5
+
+- Extend Home Assistant AppArmor profile with explicit source directory rules for `cp -a /etc/pihole/.` and `cp -a /etc/dnsmasq.d/.`.
+- Resolves startup failure: `cp: cannot access '/etc/pihole/.': Permission denied`.
+
 ## 2026.06.4
 
 - Extend Home Assistant AppArmor profile to allow startup script filesystem operations (`mkdir`, `cp`, `ls`, `rm`, `ln`, `chmod`) and Alpine `coreutils`.
