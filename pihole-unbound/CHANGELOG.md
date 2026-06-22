@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026.06.8
+
+- Extend Home Assistant AppArmor profile with runtime state access for `/run`.
+- Covers runtime socket/pid/state creation used by Unbound and service startup chain.
+
+## 2026.06.7
+
+- Broaden Home Assistant AppArmor profile for the remaining startup chain operations to reduce follow-up denials.
+- Add explicit execution rules for `/bin/chown`, `/bin/sleep`, `/bin/ps`, `/usr/sbin/unbound`, and `/usr/bin/start.sh`.
+- Add parent/log directory access for relinking and log initialization (`/etc/`, `/var/log/`, `/var/log/pihole`, `/var/log/unbound`).
+
+## 2026.06.6
+
+- Change Home Assistant AppArmor permissions for `/etc/pihole` and `/etc/dnsmasq.d` from read-only to read/write.
+- Resolves startup failure: `rm: cannot remove '/etc/dnsmasq.d/99-edns.conf': Permission denied`.
+
 ## 2026.06.5
 
 - Extend Home Assistant AppArmor profile with explicit source directory rules for `cp -a /etc/pihole/.` and `cp -a /etc/dnsmasq.d/.`.
