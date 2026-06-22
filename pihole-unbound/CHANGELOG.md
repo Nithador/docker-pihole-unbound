@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.06.11
+
+- Add explicit AppArmor execute permission for `/bin/sh` in the add-on startup handoff.
+- Resolves startup failure: `/usr/local/bin/ha-addon-start.sh: exec: line 42: /bin/sh: Permission denied`.
+
 ## 2026.06.10
 
 - Extend AppArmor path rules for direct entries under `/etc/pihole` and `/etc/dnsmasq.d`.
