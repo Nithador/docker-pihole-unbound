@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.06.10
+
+- Extend AppArmor path rules for direct entries under `/etc/pihole` and `/etc/dnsmasq.d`.
+- Add explicit access for `/etc/pihole/logrotate` to resolve startup failure:
+	`rm: cannot remove '/etc/pihole/logrotate': Permission denied`.
+
 ## 2026.06.9
 
 - Add explicit AppArmor link permissions (`l`) for bare paths `/etc/pihole` and `/etc/dnsmasq.d`.
