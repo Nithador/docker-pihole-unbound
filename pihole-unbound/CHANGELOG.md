@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.06.4
+
+- Extend Home Assistant AppArmor profile to allow startup script filesystem operations (`mkdir`, `cp`, `ls`, `rm`, `ln`, `chmod`) and Alpine `coreutils`.
+- Resolves startup failure at `mkdir` (line 17) and prevents follow-up denials for the same operation chain.
+
 ## 2026.06.3
 
 - Extend Home Assistant AppArmor profile to allow `jq` execution from add-on startup script.
