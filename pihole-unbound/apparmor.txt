@@ -1,0 +1,21 @@
+#include <tunables/global>
+
+profile pi-hole-unbound flags=(attach_disconnected,mediate_deleted) {
+  #include <abstractions/base>
+
+  capability setuid,
+  capability setgid,
+  capability sys_nice,
+  capability net_bind_service,
+
+  /etc/pihole/** r,
+  /etc/dnsmasq.d/** r,
+  /etc/unbound/** r,
+  /etc/lighttpd/** r,
+  /var/log/pihole/** w,
+  /var/log/unbound/** w,
+  /var/lib/pihole/** rw,
+  /var/lib/dnsmasq/** rw,
+  /var/lib/unbound/** rw,
+  /data/** rw,
+}
