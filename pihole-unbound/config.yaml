@@ -1,6 +1,6 @@
 name: "Pi-hole + Unbound"
 description: "Pi-hole DNS sinkhole with integrated Unbound resolver."
-version: "2026.06.2"
+version: "2026.06.3"
 slug: "pihole-unbound"
 url: "https://github.com/Nithador/docker-pihole-unbound"
 startup: services

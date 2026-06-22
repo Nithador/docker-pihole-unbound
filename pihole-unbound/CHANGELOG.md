@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.06.3
+
+- Extend Home Assistant AppArmor profile to allow `jq` execution from add-on startup script.
+- Resolves startup failure: `/usr/local/bin/ha-addon-start.sh: line 12: jq: Permission denied`.
+
 ## 2026.06.2
 
 - Fix Home Assistant AppArmor profile to allow executing the add-on startup scripts (`/usr/local/bin/ha-addon-start.sh` and `/custom-entrypoint.sh`).
