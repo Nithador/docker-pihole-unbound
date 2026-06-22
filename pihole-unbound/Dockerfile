@@ -1,7 +1,7 @@
 FROM ghcr.io/mpgirro/docker-pihole-unbound:2026.06.0
 
 LABEL \
-	io.hass.version="2026.06.12" \
+	io.hass.version="2026.06.13" \
 	io.hass.type="app" \
 	io.hass.arch="aarch64|amd64"
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.06.13
+
+- Diagnostic build: disable AppArmor (`apparmor: false`) in Home Assistant add-on config.
+- Use this release to confirm startup path works without AppArmor confinement.
+
 ## 2026.06.12
 
 - Add AppArmor execute permissions for shell interpreter binaries used by startup (`/bin/busybox` and `/bin/bash`).
