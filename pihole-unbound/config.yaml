@@ -11,11 +11,8 @@ host_network: true
 privileged:
   - NET_ADMIN
 arch:
-  - amd64
   - aarch64
-  - armhf
-  - armv7
-  - i386
+  - amd64
 map:
   - addon_config:rw
 webui: "http://[HOST]:80/admin/"
