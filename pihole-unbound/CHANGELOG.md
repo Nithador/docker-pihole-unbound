@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.06.9
+
+- Add explicit AppArmor link permissions (`l`) for bare paths `/etc/pihole` and `/etc/dnsmasq.d`.
+- Resolves startup failure: `ln: failed to create symbolic link '/etc/pihole': Permission denied`.
+
 ## 2026.06.8
 
 - Extend Home Assistant AppArmor profile with runtime state access for `/run`.
